@@ -1,0 +1,11 @@
+@import './node_modules/bulma/css/bulma.css';
+
+.is-dragged {
+    background-color: lightgray;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 30%), 0 0px 0 1px rgb(10 10 10 / 2%);
+}
+
+section webview{
+    display:inline-flex;
+    min-height: calc(100vh - 3.25rem);
+}

@@ -1,0 +1,25 @@
+{
+  "name": "gorgo",
+  "version": "1.0.0",
+  "description": "Small electron application to report fishing quantities to France Agrimer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build_win": "electron-packager ./ Gorgo --platform=win32 --arch=x64",
+    "build_mac": "electron-packager ./ Gorgo --platform=darwin --arch=x64"
+  },
+  "build": {
+    "productName": "Gorgo"
+  },
+  "repository": "https://github.com/Poiscaille/gorgo",
+  "author": "Poiscaille",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^12.0.1",
+    "electron-packager": "^15.2.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.2",
+    "eslint": "^7.22.0"
+  }
+}

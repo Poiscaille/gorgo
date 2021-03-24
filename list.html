@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://echangesrec.franceagrimer.fr;">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+    <link rel="stylesheet" href="./style.css">
+    <title>Consultation</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item">
+              Dépose
+            </a>
+            <a href="list.html" class="navbar-item is-active">
+              Historique
+            </a>
+            <a href="settings.html" class="navbar-item">
+              Paramètres
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-fullheight-with-navbar">
+      <webview id="webview" src="https://visiomer.franceagrimer.fr/visiomer-presentation/vues/faces/teledeclaration/index.xhtml"></webview>
+    </section>
+    <script src="./Lockr.js"></script>
+    <script src="./list.js" type="module"></script>
+  </body>
+</html>

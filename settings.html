@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://echangesrec.franceagrimer.fr;">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+    <link rel="stylesheet" href="./style.css">
+    <title>Paramètres</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item">
+                Dépose
+            </a>
+            <a href="list.html" class="navbar-item">
+                Historique
+            </a>
+            <a href="settings.html" class="navbar-item is-active">
+                Paramètres
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Paramètres</h1>
+            <h2 class="subtitle">
+                Paramétrez les identifiants pour accéder à la télédéclaration et à la visualisation.
+            </h2>
+            <div class="field">
+                <label class="label">Identifiant pour la télédéclaration</label>
+                <div class="control">
+                  <input id="login_upload" class="input" type="text" placeholder="">
+                </div>
+            </div>
+            
+            <div class="field">
+                <label class="label">Mot de passe pour la télédéclaration</label>
+                <div class="control">
+                  <input id="password_upload" class="input" type="password" placeholder="">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Identifiant pour l'accès à la base des décalarations</label>
+                <div class="control">
+                  <input id="login_download" class="input" placeholder="">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Mot de passe pour l'accès à la base des décalarations</label>
+                <div class="control">
+                  <input id="password_download" class="input" type="password" placeholder="">
+                </div>
+            </div>
+              
+            <div class="field is-grouped">
+                <div class="control">
+                  <button id="save_button" class="button is-link">Sauvegardez</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Lockr.js"></script>
+    <script src="./settings.js" type="module"></script>
+  </body>
+</html>

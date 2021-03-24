@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src https://echangesrec.franceagrimer.fr; style-src-elem https://use.fontawesome.com/ 'self'; font-src https://use.fontawesome.com/">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self';">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <title>Télédéclaration</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="index.html" class="navbar-item is-active">
+              Dépose
+            </a>
+            <a href="list.html" class="navbar-item">
+              Historique
+            </a>
+            <a href="settings.html" class="navbar-item">
+              Paramètres
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="hero is-fullheight-with-navbar">
+      <div id="drop_zone" class="hero-body box m-5">
+        <div class="container has-text-centered">
+          <p class="title">
+            Déposez votre fichier ici
+          </p>
+          <p class="subtitle">
+            accepte les .csv et .ric
+          </p>
+          <div class="section">
+            <div class="columns is-centered">
+              <div class="file has-name is-boxed is-flex">
+                <label class="file-label">
+                  <input id="file_input" class="file-input" type="file" name="resume">
+                  <span class="file-cta">
+                      <span class="file-icon">
+                      <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                      Choisir un fichier
+                    </span>
+                  </span>
+                  <input id="filename_input" class="file-name">
+                </label>
+              </div>
+            </div>
+            <div class="section">
+              <div class="columns is-centered">
+                <button id="upload_button" class="button is-link is-static"> Envoyer</button>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="./Lockr.js"></script>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
