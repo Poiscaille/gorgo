@@ -22,7 +22,21 @@ export function upload(fileName, fileContent) {
     var myHeaders = new Headers();
     myHeaders.append('Content-Type', 'text/xml');
 
-    var raw = `<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dep="http://depot_fichier.fam.fr/"><soap:Header/><soap:Body><dep:EnvoiTexte><login>${login}</login><password>${password}</password><typeApplication>2</typeApplication><param></param><nomFichier>${fileName}</nomFichier><buffer>${fileContent}</buffer></dep:EnvoiTexte></soap:Body></soap:Envelope>`; // eslint-disable-line max-len
+    var raw =
+    `<?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:dep="http://depot_fichier.fam.fr/">
+        <soap:Header/>
+        <soap:Body>
+            <dep:EnvoiTexte>
+                <login>${login}</login>
+                <password>${password}</password>
+                <typeApplication>2</typeApplication>
+                <param></param>
+                <nomFichier>${fileName}</nomFichier>
+                <buffer>${fileContent}</buffer>
+            </dep:EnvoiTexte>
+        </soap:Body>
+    </soap:Envelope>`; // eslint-disable-line max-len
 
     var requestOptions = {
         method: 'POST',
