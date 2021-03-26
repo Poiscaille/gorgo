@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 (function(root, factory) {
 
     if (typeof exports !== 'undefined') {
@@ -16,6 +17,7 @@
     'use strict';
   
     if (!Array.prototype.indexOf) {
+        // eslint-disable-next-line no-extend-native
         Array.prototype.indexOf = function(elt /*, from*/) {
             var len = this.length >>> 0;
   

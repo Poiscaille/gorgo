@@ -1,6 +1,6 @@
 {
   "name": "gorgo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small electron application to report fishing quantities to France Agrimer",
   "main": "main.js",
   "scripts": {
