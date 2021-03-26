@@ -9,6 +9,7 @@ function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 1200,
         height: 800,
+        title: 'Gorgo ' + app.getVersion(),
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             webviewTag: true
@@ -19,7 +20,7 @@ function createWindow() {
     mainWindow.loadFile('index.html');
 
     // Open the DevTools.
-    // mainWindow.webContents.openDevTools();
+    mainWindow.webContents.openDevTools();
 }
 
 // This method will be called when Electron has finished

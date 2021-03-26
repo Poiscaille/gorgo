@@ -18,6 +18,9 @@ function uploadFile() {
     .then(() => {
         uploadButton.classList.remove('is-loading');
         alert('fichier envoyé avec succès'); // eslint-disable-line no-alert
+        uploadFileContent = undefined;
+        fileNameInput.value = '';
+        deactivateUploadButton();
     })
     .catch(err => {
         uploadButton.classList.remove('is-loading');
